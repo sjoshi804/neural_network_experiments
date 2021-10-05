@@ -1,8 +1,8 @@
-from lib.train import Train
-from lib.fcNetwork import FCNetwork
-from lib.util import split_data_into_batches, train_test_split, test_loss
-from lib.baseExperiment import BaseExperiment
-from lib.syntheticData import SyntheticData
+from neural_network_experiments.lib.train import Train
+from neural_network_experiments.lib.fcNetwork import FCNetwork
+from neural_network_experiments.lib.util import split_data_into_batches, train_test_split, test_loss
+from neural_network_experiments.lib.baseExperiment import BaseExperiment
+from neural_network_experiments.lib.syntheticData import SyntheticData
 from torch import nn
 import matplotlib.pyplot as plt
 
@@ -39,17 +39,18 @@ class Experiment1(BaseExperiment):
         plt.title("1 Hidden Layer Linear Model Comparison")
         plt.savefig(results_folder_path + "/" + "test_loss")
 
-# Config
-config = {
-    "num_samples": 10,
-    "input_dim": 2,
-    "output_dim": 1,
-    "teacher_hidden_layer_dim": 2,
-    "student_hidden_layer_dim_min": 1, 
-    "student_hidden_layer_dim_max": 20
-}
+if __name__ == '__main__':
+    # Config
+    config = {
+        "num_samples": 10,
+        "input_dim": 1,
+        "output_dim": 1,
+        "teacher_hidden_layer_dim": 1,
+        "student_hidden_layer_dim_min": 1, 
+        "student_hidden_layer_dim_max": 2
+    }
 
-# Running Experiment
-experiment = Experiment1()
-experiment.run()
-experiment.results()
+    # Running Experiment
+    experiment = Experiment1(config)
+    experiment.run()
+    experiment.results()

@@ -4,12 +4,11 @@ from pprint import pformat
 
 class BaseExperiment():
     def __init__(self, config):
-        self.config
-        pass
+        self.config = config
     
     def results(self):
         # Create directory for results
-        current_time = datetime.now()
+        current_time = str(datetime.now())
         os.mkdir(current_time)
         # Write config to file
         with open("config.txt", "w") as config_file:

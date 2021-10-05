@@ -1,4 +1,4 @@
-from lib.fcNetwork import FCNetwork
+from .fcNetwork import FCNetwork
 import torch
 
 class SyntheticData():
@@ -13,10 +13,11 @@ class SyntheticData():
         
         for i in range(num_samples):
             # X ~ normal distribution
-            x = torch.normal(torch.tensor([0] * layers_dim[0]), torch.tensor([1] * layers_dim[0]))
+            x = torch.normal(torch.tensor([0.] * layers_dim[0]), torch.tensor([1.] * layers_dim[0]))
+            print(x)
             # Y = Teacher(x)
             y = self.teacher(x)
             # Noise ~ normal distribution with small variance
-            noise = torch.normal(torch.tensor([0] * layers_dim[0]), torch.tensor([0.01] * layers_dim[0]))
+            noise = torch.normal(torch.tensor([0.] * layers_dim[0]), torch.tensor([0.01] * layers_dim[0]))
             # Data = (X, y + Noise)
             self.data.append((x, y + noise))

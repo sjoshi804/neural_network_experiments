@@ -11,13 +11,13 @@ class FCNetwork(nn.Module):
         assert(len(layers_dim) >= 3) # atleast one hidden layer
 
         # Creating the model
-        self.model = nn.ModuleList()
+        layers = []
         for i in range(len(layers_dim) - 1):
-            self.model.append(nn.Linear(layers_dim[i], layers_dim[i+1]))
+            layers.append(nn.Linear(layers_dim[i], layers_dim[i+1]))
+        self.model = nn.Sequential(*layers)
 
     def forward(self, x):
         return self.model(x)
-
 
 
 

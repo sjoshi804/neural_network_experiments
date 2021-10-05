@@ -15,9 +15,9 @@ def split_data_into_batches(data, batch_size):
     return batched_data
 
 def train_test_split(data, train_fraction=0.8):
-    split_index = 0.8 * len(data)
-    train_data = data[split_index]
-    test_data = data[split_index]
+    split_index = int(0.8 * len(data))
+    train_data = data[:split_index]
+    test_data = data[split_index:]
     return train_data, test_data
 
 def test_loss(test_data, model, loss_fn):
