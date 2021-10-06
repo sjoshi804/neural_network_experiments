@@ -1,3 +1,5 @@
+import argparse
+
 import numpy as np
 import pandas as pd
 import tensorflow as tf
@@ -74,14 +76,15 @@ def main(dataset="mnist"):
                 verbose=0
             )
             for epoch in range(len(hist.history["loss"])):
+                epoch_res = {
+                    "epoch": (epoch + 1),
+                    "num_parameters": num_params,
+                    "dim": dim,
+                    "rank": rank,
+                }
                 for metric, values in hist.history.items():
-                    results.append({
-                        "epoch": (epoch + 1),
-                        metric: values[epoch],
-                        "num_parameters": num_params,
-                        "dim": dim,
-                        "rank": rank,
-                    })
+                    epoch_res[metric] = values[epoch]
+                results.append(epoch_res)
             print(f"Final val acc: {hist.history['val_accuracy'][-1]:.2f}")
     results = pd.DataFrame(results)
     results.to_csv(f"results_{dataset}.csv")
@@ -89,4 +92,11 @@ def main(dataset="mnist"):
 
 
 if __name__ == "__main__":
-    main(dataset="cifar10")
+    parser = argparse.ArgumentParser(description="Runs a low rank dense layer experiment")
+    parser.add_argument(
+        "--dataset",
+        required=True,
+        choices=["mnist", "cifar10", "cifar100"]
+    )
+    args = parser.parse_args()
+    main(dataset=args.dataset)
