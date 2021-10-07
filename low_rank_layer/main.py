@@ -1,4 +1,5 @@
 import argparse
+import time
 
 import numpy as np
 import pandas as pd
@@ -66,7 +67,8 @@ def main(dataset="mnist"):
                 continue
             model = get_model(x_train.shape[1:], y_train.shape[-1], dim=dim, rank=rank)
             num_params = np.sum([count_params(w) for w in model.trainable_weights])
-            print(f"Dim: {dim}, Rank: {rank}, #Params: {num_params} - ", end="")
+            print(f"Dim: {dim}, Rank: {rank}, #Params: {num_params} - ", end="", flush=True)
+            start_time = time.time()
             hist = model.fit(
                 x_train,
                 y_train,
@@ -75,12 +77,16 @@ def main(dataset="mnist"):
                 epochs=50,
                 verbose=0
             )
+            end_time = time.time()
+            training_duration = end_time - start_time
+            print(f"Finished in {training_duration:.2f} seconds ", end="", flush=True)
             for epoch in range(len(hist.history["loss"])):
                 epoch_res = {
                     "epoch": (epoch + 1),
                     "num_parameters": num_params,
                     "dim": dim,
                     "rank": rank,
+                    "training_duration": training_duration
                 }
                 for metric, values in hist.history.items():
                     epoch_res[metric] = values[epoch]
