@@ -31,9 +31,9 @@ def get_model(input_shape: list[int], output_shape: int, dim: int, rank: int) ->
         InputLayer(input_shape=input_shape),
         Flatten(),
         get_dense(),
-        ReLU(),
+        # ReLU(),
         get_dense(),
-        ReLU(),
+        # ReLU(),
         Dense(output_shape),
         Softmax()
     ])
@@ -93,7 +93,7 @@ def main(dataset="mnist"):
                 results.append(epoch_res)
             print(f"Final val acc: {hist.history['val_accuracy'][-1]:.2f}")
     results = pd.DataFrame(results)
-    results.to_csv(f"results_{dataset}.csv")
+    results.to_csv(f"results_linear_{dataset}.csv")
     print(results)
 
 

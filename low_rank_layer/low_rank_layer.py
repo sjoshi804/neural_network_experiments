@@ -34,6 +34,9 @@ class LowRankDense(Layer):
         loss = tf.norm(u_reg) + tf.norm(v_reg)
         self.add_loss(0.001 * loss)
 
+    def add_rank(self):
+        pass
+
     def call(self, inputs, *args, **kwargs):
         return inputs @ (self.kernel_u @ self.kernel_v) + self.b
 
