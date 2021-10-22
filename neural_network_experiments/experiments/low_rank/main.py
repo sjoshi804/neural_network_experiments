@@ -2,33 +2,8 @@ import numpy as np
 import torch
 from torch import nn
 from torch.utils.data import DataLoader
-from torchvision import datasets
-from torchvision.transforms import ToTensor, Lambda
-
 from neural_network_experiments.experiments.low_rank.model import LowRankNetwork
-
-
-def get_data():
-    training_data = datasets.CIFAR10(
-        root="data",
-        train=True,
-        download=True,
-        transform=ToTensor(),
-        # target_transform=Lambda(
-        #     lambda y: torch.zeros(10, dtype=torch.float).scatter_(0, torch.tensor(y), value=1)
-        # )
-    )
-    test_data = datasets.CIFAR10(
-        root="data",
-        train=False,
-        download=True,
-        transform=ToTensor(),
-        # target_transform=Lambda(
-        #     lambda y: torch.zeros(10, dtype=torch.float).scatter_(0, torch.tensor(y), value=1)
-        # )
-    )
-    return training_data, test_data
-
+from neural_network_experiments.lib.util import get_data
 
 def train_loop(dataloader, model, loss_fn, optimizer):
     size = len(dataloader.dataset)
