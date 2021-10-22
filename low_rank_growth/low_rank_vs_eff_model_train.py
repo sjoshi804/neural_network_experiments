@@ -2,6 +2,7 @@ import argparse
 import random
 
 import numpy as np
+import pandas as pd
 
 import tensorflow as tf
 from tensorflow.keras.datasets import mnist, cifar10, cifar100
@@ -37,11 +38,11 @@ def main(dataset: str):
     low_rank_model = Sequential([
         InputLayer(input_shape=x_train.shape[1:]),
         Flatten(),
-        LowRankDense(20, init_rank=10),
+        LowRankDense(200, init_rank=10),
         ReLU(),
-        LowRankDense(30, init_rank=10),
+        LowRankDense(200, init_rank=10),
         ReLU(),
-        LowRankDense(40, init_rank=10),
+        LowRankDense(200, init_rank=10),
         ReLU(),
         LowRankDense(num_classes, init_rank=5),
         Softmax()
@@ -59,12 +60,17 @@ def main(dataset: str):
     acc_fn = CategoricalAccuracy()
     optimizer = RMSprop()
     val_acc_fn = CategoricalAccuracy(name="val_categorical_accuracy")
-    for epoch in range(50):
+
+    results = []
+    for epoch in range(100):
+        result = {"epoch": epoch}
+
         acc_fn.reset_state()
         val_acc_fn.reset_state()
 
         print(f"Starting epoch: {epoch}")
 
+        # train for an epoch
         for step, (x_batch, y_batch) in enumerate(training_ds):
             with tf.GradientTape() as tape:
                 y_pred = low_rank_model(x_batch)
@@ -75,7 +81,10 @@ def main(dataset: str):
             optimizer.apply_gradients(zip(grads, low_rank_model.trainable_weights))
             print(f"\rStep {step} - loss: {loss:.4f} acc: {acc_fn.result().numpy():.3f}", end="")
         print()
+        result["loss"] = loss
+        result["acc"] = acc_fn.result().numpy()
 
+        # effective gradients
         set_eff_weights(effective_model, low_rank_model)
         indices = list(range(len(x_train)))
         random.shuffle(indices)
@@ -104,13 +113,22 @@ def main(dataset: str):
             # print(i, dist)
             dist = np.arccos(dist)
             print(i, dist / np.pi * 180)
+            result[f"layer_{i}"] = dist / np.pi * 180
 
+        # validation metrics
         val_y_pred = low_rank_model(x_test)
         val_err = loss_fn(y_test, val_y_pred)
         val_loss = tf.reduce_mean(val_err)
         val_acc_fn.update_state(y_test, val_y_pred)
-
         print(f"val loss: {val_loss:.4f} val acc: {val_acc_fn.result().numpy():.3f}")
+
+        result["val_loss"] = val_loss
+        result["val_acc"] = val_acc_fn.result().numpy()
+
+        results.append(result)
+
+    results = pd.DataFrame(results).set_index("epoch")
+    results.to_csv(f"{dataset}_results.csv")
 
 
 if __name__ == "__main__":
