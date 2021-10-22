@@ -1,6 +1,7 @@
 **/.DS_Store
 neural_network_experiments.egg-info
 **/__pycache__
+data 
 
 # Editors
 .idea/
