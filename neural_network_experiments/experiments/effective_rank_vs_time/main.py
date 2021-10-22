@@ -52,7 +52,7 @@ def main(device: str):
 
     optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
     loss_fn = nn.CrossEntropyLoss()
-    epochs = 1
+    epochs = 50
 
     ranks = []
     for layer in model.layers:
