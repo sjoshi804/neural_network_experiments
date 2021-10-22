@@ -14,6 +14,7 @@ class FCNetwork(nn.Module):
         layers = []
         for i in range(len(layers_dim) - 1):
             layers.append(nn.Linear(layers_dim[i], layers_dim[i+1]))
+            layers.append(nn.ReLU())
         self.model = nn.Sequential(*layers)
 
     def forward(self, x):
