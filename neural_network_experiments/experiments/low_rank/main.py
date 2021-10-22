@@ -40,7 +40,7 @@ def test_loop(dataloader, model, loss_fn):
 
 
 def main(device: str):
-    training_data, test_data = get_data()
+    training_data, test_data = get_data("CIFAR10")
     train_dataloader = DataLoader(training_data, batch_size=64, shuffle=True)
     test_dataloader = DataLoader(test_data, batch_size=64, shuffle=True)
 
