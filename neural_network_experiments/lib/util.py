@@ -1,5 +1,7 @@
 from torch import tensor
 import numpy as np 
+import torch
+import torch.nn.functional as F
 
 def split_data_into_batches(data, batch_size):
     batched_data = []
@@ -27,3 +29,24 @@ def test_loss(test_data, model, loss_fn):
         output = model(input)
         losses.append(loss_fn(output, target))
     return np.mean(losses)
+
+def outer_product_tensor_w_vector(a_tensor: tensor, a_vector: tensor):
+    # Assert that arguments are correct
+    if len(a_vector.shape) != 1:
+        raise Exception("Invalid argument: a_vector must be a 1d tensor")
+    if len(a_tensor.shape) < 1:
+        raise Exception("Invalid argument: a_tensor must not be a scalar")
+    # Shape of final tensor will be a_vector.shape.extend(a_tensor.shape)
+    result = torch.kron(a_vector, a_tensor)
+    return result.reshape(a_vector.shape + a_tensor.shape)
+
+
+def effective_rank(weight_matrix):
+    _, singular_values, _ = torch.svd(weight_matrix)
+    normalized_singular_values = F.normalize(singular_values, 1.0)
+    return entropy(normalized_singular_values)
+
+def entropy(vector):
+    prob = np.array(vector)
+    log_prob = np.log2(prob)
+    return np.sum(-prob*log_prob)
