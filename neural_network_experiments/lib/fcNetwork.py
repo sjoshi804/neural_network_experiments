@@ -8,13 +8,16 @@ class  FCNetwork(nn.Module):
         super().__init__()
 
         # Creating the model
+        self.flatten = nn.Flatten()
         self.layers = []
         for i in range(len(layers_dim) - 1):
             self.layers.append(nn.Linear(layers_dim[i], layers_dim[i+1]))
-            self.layers.append(nn.ReLU())
+            if i + 1 < (len(layers_dim) - 1):
+                self.layers.append(nn.ReLU())
         self.model = nn.Sequential(*self.layers)
 
     def forward(self, x):
+        x = self.flatten(x)
         return self.model(x)
 
 
