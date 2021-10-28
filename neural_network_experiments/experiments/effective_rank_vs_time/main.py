@@ -90,7 +90,7 @@ def main(device: str):
     plt.plot(range(len(final_effective_ranks)), final_effective_ranks)
     plt.xlabel("Layers")
     plt.ylabel("Effective Rank")
-    plt.title("Layer " + str(i))
+    plt.title("Effective Rank v/s Layers")
     plt.savefig("CIFAR-10 Layers Final Effective Ranks")
     plt.clf()
     print("Done!")
