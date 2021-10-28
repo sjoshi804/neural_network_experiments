@@ -71,7 +71,7 @@ def main(device: str):
         i = 0
         for layer in model.layers:
             if type(layer) is not nn.ReLU:
-                ranks[i].append(effective_rank(layer.state_dict()['weight'].cpu()))
+                ranks[i].append(effective_rank(layer.state_dict()['weight']))
                 i += 1
 
     # Graph effective ranks

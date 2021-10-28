@@ -90,12 +90,11 @@ def outer_product_tensor_w_vector(a_tensor: tensor, a_vector: tensor):
 
 def effective_rank(weight_matrix):
     _, singular_values, _ = torch.svd(weight_matrix)
-    sum = np.sum(np.array(singular_values))
+    sum = torch.sum(singular_values)
     normalized_singular_values = singular_values/sum
     return entropy(normalized_singular_values)
 
-def entropy(vector):
-    prob = np.array(vector)
-    log_prob = np.log2(prob)
-    return np.sum(-prob*log_prob)/np.log2(len(prob))
+def entropy(prob):
+    log_prob = torch.log2(prob)
+    return torch.sum(-prob*log_prob)/torch.log2(len(prob))
 
