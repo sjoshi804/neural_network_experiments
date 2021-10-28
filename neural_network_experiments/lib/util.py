@@ -96,5 +96,5 @@ def effective_rank(weight_matrix):
 
 def entropy(prob):
     log_prob = torch.log2(prob)
-    return torch.sum(-prob*log_prob)/torch.log2(len(prob))
+    return torch.sum(-prob*log_prob)/torch.log2(tensor(len(prob)))
 
