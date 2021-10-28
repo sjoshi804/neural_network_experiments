@@ -4,12 +4,12 @@ from torch import nn
 from torch.utils.data import DataLoader
 from neural_network_experiments.lib.fcNetwork import FCNetwork
 from neural_network_experiments.lib.util import get_data, effective_rank
+import matplotlib.pyplot as plt
 
 def train_loop(dataloader, model, loss_fn, optimizer):
     size = len(dataloader.dataset)
     for batch, (X, y) in enumerate(dataloader):
         # Compute prediction and loss
-        X = X.reshape(-1, 28*28).to(device)
         pred = model(X)
         # import pdb; pdb.set_trace()
         loss = loss_fn(pred, y)
@@ -30,7 +30,6 @@ def test_loop(dataloader, model, loss_fn):
 
     with torch.no_grad():
         for X, y in dataloader:
-            X = X.reshape(-1, 28*28).to(device)
             pred = model(X)
             test_loss += loss_fn(pred, y).item()
             correct += (pred.argmax(1) == y).type(torch.float).sum().item()
@@ -41,14 +40,14 @@ def test_loop(dataloader, model, loss_fn):
 
 
 def main(device: str):
-    training_data, test_data = get_data("MNIST")
+    training_data, test_data = get_data("CIFAR10")
     train_dataloader = DataLoader(training_data, batch_size=64, shuffle=True)
     test_dataloader = DataLoader(test_data, batch_size=64, shuffle=True)
 
     input_dim = int(np.prod(training_data.data.shape[1:]))
     output_dim = len(training_data.classes)
 
-    model = FCNetwork([input_dim, 100, 100, output_dim]).to(device)
+    model = FCNetwork([input_dim, 100, 100, 100, 100, 100, 100, 100, 100, output_dim]).to(device)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
     loss_fn = nn.CrossEntropyLoss()
@@ -71,7 +70,23 @@ def main(device: str):
                 ranks[i].append(effective_rank(layer.state_dict()['weight']))
                 i += 1
 
-    print(ranks)
+    # Graph effective ranks
+    x = range(epochs)
+    for i, rank_data in enumerate(ranks): 
+        plt.plot(x, rank_data)
+        plt.xlabel("Epochs")
+        plt.ylabel("Effective Rank")
+        plt.title("Layer " + str(i))
+        plt.savefig("CIFAR-10 Layer " + str(i))
+
+    final_effective_ranks = []
+    for layer_ranks in ranks:
+        final_effective_ranks.append(layer_ranks[-1])
+    plt.plot(range(len(final_effective_ranks)), final_effective_ranks)
+    plt.xlabel("Layers")
+    plt.ylabel("Effective Rank")
+    plt.title("Layer " + str(i))
+    plt.savefig("CIFAR-10 Layers Final Effective Ranks")
     print("Done!")
 
 
