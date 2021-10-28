@@ -82,6 +82,7 @@ def main(device: str):
         plt.ylabel("Effective Rank")
         plt.title("Layer " + str(i))
         plt.savefig("CIFAR-10 Layer " + str(i))
+        plt.clf()
 
     final_effective_ranks = []
     for layer_ranks in ranks:
@@ -91,6 +92,7 @@ def main(device: str):
     plt.ylabel("Effective Rank")
     plt.title("Layer " + str(i))
     plt.savefig("CIFAR-10 Layers Final Effective Ranks")
+    plt.clf()
     print("Done!")
 
 
