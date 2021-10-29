@@ -38,11 +38,11 @@ def main(dataset: str):
     low_rank_model = Sequential([
         InputLayer(input_shape=x_train.shape[1:]),
         Flatten(),
-        LowRankDense(200, init_rank=10),
+        LowRankDense(200, init_rank=80),
         ReLU(),
-        LowRankDense(200, init_rank=10),
+        LowRankDense(200, init_rank=60),
         ReLU(),
-        LowRankDense(200, init_rank=10),
+        LowRankDense(200, init_rank=20),
         ReLU(),
         LowRankDense(num_classes, init_rank=5),
         Softmax()
@@ -81,7 +81,7 @@ def main(dataset: str):
             optimizer.apply_gradients(zip(grads, low_rank_model.trainable_weights))
             print(f"\rStep {step} - loss: {loss:.4f} acc: {acc_fn.result().numpy():.3f}", end="")
         print()
-        result["loss"] = loss
+        result["loss"] = loss.numpy()
         result["acc"] = acc_fn.result().numpy()
 
         # effective gradients
@@ -122,13 +122,13 @@ def main(dataset: str):
         val_acc_fn.update_state(y_test, val_y_pred)
         print(f"val loss: {val_loss:.4f} val acc: {val_acc_fn.result().numpy():.3f}")
 
-        result["val_loss"] = val_loss
+        result["val_loss"] = val_loss.numpy()
         result["val_acc"] = val_acc_fn.result().numpy()
 
         results.append(result)
 
     results = pd.DataFrame(results).set_index("epoch")
-    results.to_csv(f"{dataset}_results.csv")
+    results.to_csv(f"{dataset}_results_5.csv")
 
 
 if __name__ == "__main__":

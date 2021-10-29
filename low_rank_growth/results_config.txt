@@ -1,0 +1,69 @@
+results_1
+low_rank_model = Sequential([
+    InputLayer(input_shape=x_train.shape[1:]),
+    Flatten(),
+    LowRankDense(200, init_rank=10),
+    ReLU(),
+    LowRankDense(200, init_rank=10),
+    ReLU(),
+    LowRankDense(200, init_rank=20),
+    ReLU(),
+    LowRankDense(num_classes, init_rank=5),
+    Softmax()
+])
+
+results_2
+low_rank_model = Sequential([
+    InputLayer(input_shape=x_train.shape[1:]),
+    Flatten(),
+    LowRankDense(200, init_rank=20),
+    ReLU(),
+    LowRankDense(200, init_rank=20),
+    ReLU(),
+    LowRankDense(200, init_rank=40),
+    ReLU(),
+    LowRankDense(num_classes, init_rank=5),
+    Softmax()
+])
+
+results_3
+low_rank_model = Sequential([
+    InputLayer(input_shape=x_train.shape[1:]),
+    Flatten(),
+    LowRankDense(200, init_rank=20),
+    ReLU(),
+    LowRankDense(200, init_rank=20),
+    ReLU(),
+    LowRankDense(200, init_rank=60),
+    ReLU(),
+    LowRankDense(num_classes, init_rank=5),
+    Softmax()
+])
+
+results_4
+low_rank_model = Sequential([
+    InputLayer(input_shape=x_train.shape[1:]),
+    Flatten(),
+    LowRankDense(200, init_rank=20),
+    ReLU(),
+    LowRankDense(200, init_rank=20),
+    ReLU(),
+    LowRankDense(200, init_rank=80),
+    ReLU(),
+    LowRankDense(num_classes, init_rank=5),
+    Softmax()
+])
+
+results_5
+low_rank_model = Sequential([
+    InputLayer(input_shape=x_train.shape[1:]),
+    Flatten(),
+    LowRankDense(200, init_rank=80),
+    ReLU(),
+    LowRankDense(200, init_rank=60),
+    ReLU(),
+    LowRankDense(200, init_rank=20),
+    ReLU(),
+    LowRankDense(num_classes, init_rank=5),
+    Softmax()
+])
