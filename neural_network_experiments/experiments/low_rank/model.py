@@ -1,4 +1,4 @@
-from neural_network_experiments.experiments.low_rank import low_rank_layer as lrl
+from neural_network_experiments.lib import low_rank_layer as lrl
 from torch import nn
 
 
