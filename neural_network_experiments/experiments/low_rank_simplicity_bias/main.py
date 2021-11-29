@@ -3,7 +3,7 @@ import torch
 from torch import nn
 from torch.utils.data import DataLoader
 from neural_network_experiments.lib.util import get_data, effective_rank
-from modelfrompaper import ModelFromPaper
+from modelfrompaper import ModelFromPaper, ModelFromPaperWithLowRankLayer
 import matplotlib.pyplot as plt
 
 def train_loop(dataloader, model, loss_fn, optimizer, device):
@@ -95,19 +95,33 @@ def main(device: str):
     accuracies = []
     effective_ranks_1 = []
     effective_ranks_2 = []
-    for expansion_factor in [1, 2, 4, 8]:
+    labels = []
+    expansion_factors = [1, 2, 4, 8]
+    for expansion_factor in expansion_factors:
         model = ModelFromPaper(expansion_factor).to(device)
         loss, accuracy, effective_rank_1, effective_rank_2 = train_and_test(model, train_dataloader, test_dataloader, epochs)
         losses.append(loss)
         accuracies.append(accuracy)
         effective_ranks_1.append(effective_rank_1)
         effective_ranks_2.append(effective_rank_2)
+        labels.append("Expansion: " + str(expansion_factor))
+
+    ranks_for_linear1 = [40, 80, 120, 160, 200]
+    for rank1 in ranks_for_linear1:
+        model = ModelFromPaperWithLowRankLayer(rank1).to(device)
+        loss, accuracy, effective_rank_1, effective_rank_2 = train_and_test(model, train_dataloader, test_dataloader, epochs)
+        losses.append(loss)
+        accuracies.append(accuracy)
+        effective_ranks_1.append(effective_rank_1)
+        effective_ranks_2.append(effective_rank_2)
+        labels.append("Low Rank Layer: " + str(rank1))
 
     plt.xlabel("Epochs")
     plt.ylabel("Test Accuracy")
     plt.title("Investigating Low Rank Simplicity Bias: Accuracy")
+    
     for i, accuracy in enumerate(accuracies):
-        plt.plot(range(epochs), accuracy, label=str(2**(i-1)))
+        plt.plot(range(epochs), accuracy, label=labels[i])
     plt.savefig("low_rank_simplicity_bias_acc")
     plt.clf()
 
@@ -115,7 +129,7 @@ def main(device: str):
     plt.ylabel("Loss")
     plt.title("Investigating Low Rank Simplicity Bias: Loss")
     for i, loss in enumerate(losses):
-        plt.plot(range(epochs), loss, label=str(2**(i-1)))
+        plt.plot(range(epochs), loss, label=labels[i])
     plt.savefig("low_rank_simplicity_bias_loss")
     plt.clf()
 
@@ -123,7 +137,7 @@ def main(device: str):
     plt.ylabel("Effective Rank")
     plt.title("Investigating Low Rank Simplicity Bias: Eff Rank Layer 1")
     for i, rank in enumerate(effective_ranks_1):
-        plt.plot(range(epochs), rank, label=str(2**(i-1)))
+        plt.plot(range(epochs), rank, label=labels[i])
     plt.savefig("low_rank_simplicity_bias_eff_rank_1")
     plt.clf()
 
@@ -131,7 +145,7 @@ def main(device: str):
     plt.ylabel("Effective Rank")
     plt.title("Investigating Low Rank Simplicity Bias: Eff Rank Layer 2")
     for i, rank in enumerate(effective_ranks_2):
-        plt.plot(range(epochs), rank, label=str(2**(i-1)))
+        plt.plot(range(epochs), rank, label=labels[i])
     plt.savefig("low_rank_simplicity_bias_eff_rank_2")
     plt.clf()
 
