@@ -72,10 +72,11 @@ def get_effective_rank(linear_layers):
         if type(layer) is not nn.Linear:
             continue
 
-        if matrix is None:
-            matrix = layer.weight
+        elif matrix is None:
+            matrix = layer.weight.cpu()
         else:
-            matrix = torch.matmul(layer.weight, matrix)
+            matrix = torch.matmul(layer.weight.cpu(), matrix)
+    
     return effective_rank(matrix)
 
 def main(device: str):
@@ -122,6 +123,7 @@ def main(device: str):
     
     for i, accuracy in enumerate(accuracies):
         plt.plot(range(epochs), accuracy, label=labels[i])
+    plt.legend()
     plt.savefig("low_rank_simplicity_bias_acc")
     plt.clf()
 
@@ -130,6 +132,7 @@ def main(device: str):
     plt.title("Investigating Low Rank Simplicity Bias: Loss")
     for i, loss in enumerate(losses):
         plt.plot(range(epochs), loss, label=labels[i])
+    plt.legend()
     plt.savefig("low_rank_simplicity_bias_loss")
     plt.clf()
 
@@ -138,6 +141,7 @@ def main(device: str):
     plt.title("Investigating Low Rank Simplicity Bias: Eff Rank Layer 1")
     for i, rank in enumerate(effective_ranks_1):
         plt.plot(range(epochs), rank, label=labels[i])
+    plt.legend()
     plt.savefig("low_rank_simplicity_bias_eff_rank_1")
     plt.clf()
 
@@ -146,6 +150,7 @@ def main(device: str):
     plt.title("Investigating Low Rank Simplicity Bias: Eff Rank Layer 2")
     for i, rank in enumerate(effective_ranks_2):
         plt.plot(range(epochs), rank, label=labels[i])
+    plt.legend()
     plt.savefig("low_rank_simplicity_bias_eff_rank_2")
     plt.clf()
 
