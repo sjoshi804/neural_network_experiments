@@ -25,6 +25,22 @@ class LowRankDense(layers.Layer):
         )
         self.add_rank(self.init_rank)  # initial ranks
 
+        def orth_reg():
+            tot_reg = 0
+            for i, kernel_u in enumerate(self.kernel_us):
+                for prev_kernel_u in self.kernel_us[:i]:
+                    reg = tf.matmul(prev_kernel_u, kernel_u, transpose_a=True)
+                    reg -= tf.eye(reg.shape[0], reg.shape[1])
+                    tot_reg += tf.nn.l2_loss(reg)
+            for i, kernel_v in enumerate(self.kernel_vs):
+                for prev_kernel_v in self.kernel_vs[:i]:
+                    reg = tf.matmul(prev_kernel_v, kernel_v, transpose_b=True)
+                    reg -= tf.eye(reg.shape[0], reg.shape[1])
+                    tot_reg += tf.nn.l2_loss(reg)
+            return tot_reg
+
+        self.add_loss(orth_reg)
+
     def add_rank(self, num_ranks):
         w_init = tf.random_normal_initializer()
         kernel_u = self.add_weight(

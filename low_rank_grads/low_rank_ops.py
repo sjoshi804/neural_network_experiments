@@ -8,13 +8,15 @@ from tensorflow.keras.layers import InputLayer, Dense, Flatten, Softmax, ReLU
 from low_rank_layer import LowRankDense
 
 
-def create_eff_model(low_rank_model: Sequential) -> Sequential:
+def create_eff_model(low_rank_model: Sequential, name: str) -> Sequential:
     layers = []
     for layer in low_rank_model.layers:
         if isinstance(layer, InputLayer):
             layers.append(InputLayer(input_shape=layer.input_shape))
         elif isinstance(layer, LowRankDense):
             layers.append(Dense(layer.b.shape[0]))
+        elif isinstance(layer, Dense):
+            layers.append(Dense(layer.units))
         elif isinstance(layer, Flatten):
             layers.append(Flatten())
         elif isinstance(layer, Softmax):
@@ -23,7 +25,7 @@ def create_eff_model(low_rank_model: Sequential) -> Sequential:
             layers.append(ReLU())
         else:
             raise ValueError(f"Unrecognized layer type: {type(layer)}")
-    eff_model = Sequential(layers)
+    eff_model = Sequential(layers, name=name)
     eff_model.build(input_shape=low_rank_model.input_shape)
     return eff_model
 
