@@ -1,4 +1,6 @@
 import argparse
+import glob
+import json
 import random
 from typing import List
 from collections import defaultdict
@@ -11,7 +13,7 @@ import pandas as pd
 import tensorflow as tf
 from tensorflow.keras.datasets import mnist, cifar10, cifar100
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import InputLayer, Flatten, Dense, ReLU, Softmax
+from tensorflow.keras.layers import InputLayer, Flatten, Dense, ReLU, Softmax, Conv2D
 from tensorflow.keras.optimizers import SGD, RMSprop, Adam
 from tensorflow.keras.losses import CategoricalCrossentropy
 from tensorflow.keras.metrics import CategoricalAccuracy
@@ -20,7 +22,7 @@ from low_rank_layer import LowRankDense
 from low_rank_ops import create_eff_model, set_eff_weights, eff_gradients
 
 
-def main(dataset: str):
+def main(dataset: str, run_name: str):
     if dataset == "mnist":
         load_data = mnist.load_data
     elif dataset == "cifar10":
@@ -42,10 +44,15 @@ def main(dataset: str):
 
     model = Sequential([
         InputLayer(input_shape=x_train.shape[1:]),
+        Conv2D(8, 3, activation="relu"),  # 64
+        Conv2D(8, 3, activation="relu"),  # 64
         Flatten(),
-        Dense(256, activation="relu"),
-        Dense(256, activation="relu"),
-        Dense(256, activation="relu"),
+        LowRankDense(256, 200),
+        ReLU(),
+        LowRankDense(256, 128),
+        ReLU(),
+        LowRankDense(256, 128),
+        ReLU(),
         Dense(num_classes, activation="softmax"),
     ])
     model.compile(
@@ -53,32 +60,37 @@ def main(dataset: str):
         loss=CategoricalCrossentropy(),
         metrics=[CategoricalAccuracy()]
     )
+    drop_config = json.load(open(f"drop_train_results/{run_name}.json"))
+    print(drop_config)
     results = []
     epochs = 40
     for epoch in range(epochs):
-        result = {
-            "epoch": epoch
-        }
-        layer_ind = 0
+        hist = model.fit(training_ds, validation_data=(x_test, y_test))
+        low_rank_ind = 0
         for layer in model.layers:
-            if isinstance(layer, Dense):
-                w, b = layer.get_weights()
-                _, s, _ = np.linalg.svd(w, full_matrices=False)
-                result[f"layer{layer_ind}"] = s
-                layer_ind += 1
+            if isinstance(layer, LowRankDense):
+                drop = drop_config[str(low_rank_ind)]
+                if str(epoch) not in drop:
+                    continue
+                new_rank = drop[str(epoch)]
+                print(f"Setting {low_rank_ind} to {new_rank}")
+                layer.set_rank(new_rank)
+                low_rank_ind += 1
+        result = {"epoch": epoch}
+        for k, v in hist.history.items():
+            result[k] = v[0]
         results.append(result)
-        model.fit(training_ds, validation_data=(x_test, y_test))
-
-    fig, axes = plt.subplots(4, epochs, figsize=(epochs*4, 4*6))
-    for layer_ind in range(4):
-        for epoch in range(epochs):
-            ax = axes[layer_ind, epoch]
-            s = results[epoch][f"layer{layer_ind}"]
-            ax.hist(s, bins=min(50, len(s)))
-            ax.set_title(f"layer {layer_ind}, epoch {epoch}")
-    plt.show()
-    fig.savefig("svd_over_epochs.png")
+    results = pd.DataFrame(results)
+    results.to_csv(f"drop_train_results/{run_name}.csv", index_label="epoch")
 
 
 if __name__ == "__main__":
-    main(dataset="cifar10")
+    runs = glob.glob("drop_train_results/*.json")
+    runs.sort(
+        key=lambda x: int(x.split('/')[-1].split('.')[0].split('_')[1]),  # run_x -> extract x
+        reverse=True
+    )
+    runs = [x.split("/")[-1].split(".")[0] for x in runs]
+    for run in runs:
+        print(f"Starting {run}")
+        main(dataset="cifar10", run_name=run)

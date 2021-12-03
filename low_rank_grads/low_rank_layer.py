@@ -1,3 +1,4 @@
+import numpy as np
 import tensorflow as tf
 from tensorflow.keras import layers
 
@@ -64,6 +65,29 @@ class LowRankDense(layers.Layer):
 
     def kernel_v(self):
         return tf.concat(self.kernel_vs, axis=0)
+
+    def set_rank(self, ranks: int):
+        w = self.kernel_u() @ self.kernel_v()
+        u, s, v = np.linalg.svd(w, full_matrices=False)
+        s = s[:ranks]
+        u = u[:, :ranks] * s
+        v = v[:ranks, :] * s[:, None]
+        self.kernel_us = [
+            self.add_weight(
+                shape=(self.num_inputs, ranks),
+                initializer=lambda *args, **kwargs: u,
+                trainable=True,
+                name=f"u_rank-{self.rank}-{self.rank + ranks}"
+            )
+        ]
+        self.kernel_vs = [
+            self.add_weight(
+                shape=(ranks, self.num_outputs),
+                initializer=lambda *args, **kwargs: v,
+                trainable=True,
+                name=f"v_rank-{self.rank}-{self.rank + ranks}"
+            )
+        ]
 
     def call(self, inputs, *args, **kwargs):
         return inputs @ (self.kernel_u() @ self.kernel_v()) + self.b
