@@ -3,6 +3,7 @@ import torch
 from torch import nn
 from torch.utils.data import DataLoader
 from neural_network_experiments.lib.util import get_data, effective_rank
+from neural_network_experiments.lib.low_rank_layer import LowRankLinear
 from modelfrompaper import ModelFromPaper, ModelFromPaperWithLowRankLayer
 import matplotlib.pyplot as plt
 
@@ -66,16 +67,19 @@ def train_and_test(model, train_dataloader, test_dataloader, epochs):
     return train_losses, test_accuracies, effective_ranks_1, effective_ranks_2
 
 def get_effective_rank(linear_layers):
-    matrix = None
-    for layer in linear_layers.modules():
+    if type(linear_layers) is LowRankLinear:
+        matrix = torch.linalg.multi_dot([linear_layers.weight_v.cpu(), linear_layers.weight_u.cpu()])
+    else:  
+        matrix = None
+        for layer in linear_layers.modules():
 
-        if type(layer) is not nn.Linear:
-            continue
+            if type(layer) is not nn.Linear:
+                continue
 
-        elif matrix is None:
-            matrix = layer.weight.cpu()
-        else:
-            matrix = torch.matmul(layer.weight.cpu(), matrix)
+            elif matrix is None:
+                matrix = layer.weight.cpu()
+            else:
+                matrix = torch.matmul(layer.weight.cpu(), matrix)
     
     return effective_rank(matrix)
 
@@ -84,7 +88,7 @@ def main(device: str):
     training_data, test_data = get_data("CIFAR10")
     train_dataloader = DataLoader(training_data, batch_size=64, shuffle=True)
     test_dataloader = DataLoader(test_data, batch_size=64, shuffle=True)
-    epochs = 50
+    epochs = 1
 
     '''
     # Determine input, output dim
@@ -98,6 +102,7 @@ def main(device: str):
     effective_ranks_2 = []
     labels = []
     expansion_factors = [1, 2, 4, 8]
+    
     for expansion_factor in expansion_factors:
         model = ModelFromPaper(expansion_factor).to(device)
         loss, accuracy, effective_rank_1, effective_rank_2 = train_and_test(model, train_dataloader, test_dataloader, epochs)
@@ -106,7 +111,7 @@ def main(device: str):
         effective_ranks_1.append(effective_rank_1)
         effective_ranks_2.append(effective_rank_2)
         labels.append("Expansion: " + str(expansion_factor))
-
+    
     ranks_for_linear1 = [40, 80, 120, 160, 200]
     for rank1 in ranks_for_linear1:
         model = ModelFromPaperWithLowRankLayer(rank1).to(device)
