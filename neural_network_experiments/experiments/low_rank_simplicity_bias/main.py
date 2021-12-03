@@ -88,7 +88,7 @@ def main(device: str):
     training_data, test_data = get_data("CIFAR10")
     train_dataloader = DataLoader(training_data, batch_size=64, shuffle=True)
     test_dataloader = DataLoader(test_data, batch_size=64, shuffle=True)
-    epochs = 1
+    epochs = 100
 
     '''
     # Determine input, output dim
@@ -145,7 +145,8 @@ def main(device: str):
     plt.ylabel("Effective Rank")
     plt.title("Investigating Low Rank Simplicity Bias: Eff Rank Layer 1")
     for i, rank in enumerate(effective_ranks_1):
-        plt.plot(range(epochs), rank, label=labels[i])
+        rs = [r.detach().numpy() for r in rank]
+        plt.plot(range(epochs), rs, label=labels[i])
     plt.legend()
     plt.savefig("low_rank_simplicity_bias_eff_rank_1")
     plt.clf()
@@ -154,7 +155,8 @@ def main(device: str):
     plt.ylabel("Effective Rank")
     plt.title("Investigating Low Rank Simplicity Bias: Eff Rank Layer 2")
     for i, rank in enumerate(effective_ranks_2):
-        plt.plot(range(epochs), rank, label=labels[i])
+        rs = [r.detach().numpy() for r in rank]
+        plt.plot(range(epochs), rs, label=labels[i])
     plt.legend()
     plt.savefig("low_rank_simplicity_bias_eff_rank_2")
     plt.clf()

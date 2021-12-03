@@ -1,0 +1,11 @@
+Using device: cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Losses
+[[2.0625710281569636], [2.0634396603650145], [2.2484853319499805], [2.1644978886065274], [3.635572056695495e+20], [1.4146146865816296e+21], [5.276767757253681e+21], [5.258729162109568e+19], [3.0226529857371793e+21]]
+Accuracies
+[[29.81], [29.720000000000002], [18.3], [19.66], [10.0], [10.0], [10.0], [10.0], [10.0]]
+Effective Rank 1
+[[tensor(0.9844, grad_fn=<DivBackward0>)], [tensor(0.9329, grad_fn=<DivBackward0>)], [tensor(0.9341, grad_fn=<DivBackward0>)], [tensor(0.9289, grad_fn=<DivBackward0>)], [tensor(0.0097, grad_fn=<DivBackward0>)], [tensor(0.0047, grad_fn=<DivBackward0>)], [tensor(0.0030, grad_fn=<DivBackward0>)], [tensor(0.0027, grad_fn=<DivBackward0>)], [tensor(0.0019, grad_fn=<DivBackward0>)]]
+Effective Rank 2
+[[tensor(0.9958, grad_fn=<DivBackward0>)], [tensor(0.8926, grad_fn=<DivBackward0>)], [tensor(0.9046, grad_fn=<DivBackward0>)], [tensor(0.8898, grad_fn=<DivBackward0>)], [tensor(0.5598, grad_fn=<DivBackward0>)], [tensor(0.5192, grad_fn=<DivBackward0>)], [tensor(0.4169, grad_fn=<DivBackward0>)], [tensor(0.5291, grad_fn=<DivBackward0>)], [tensor(0.4900, grad_fn=<DivBackward0>)]]

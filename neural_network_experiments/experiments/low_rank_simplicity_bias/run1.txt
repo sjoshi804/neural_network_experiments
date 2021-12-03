@@ -1,0 +1,419 @@
+Using device: cuda
+Files already downloaded and verified
+Files already downloaded and verified
+expansion factor: 1
+Epoch 1
+Epoch 2
+Epoch 3
+Epoch 4
+Epoch 5
+Epoch 6
+Epoch 7
+Epoch 8
+Epoch 9
+Epoch 10
+Epoch 11
+Epoch 12
+Epoch 13
+Epoch 14
+Epoch 15
+Epoch 16
+Epoch 17
+Epoch 18
+Epoch 19
+Epoch 20
+Epoch 21
+Epoch 22
+Epoch 23
+Epoch 24
+Epoch 25
+Epoch 26
+Epoch 27
+Epoch 28
+Epoch 29
+Epoch 30
+Epoch 31
+Epoch 32
+Epoch 33
+Epoch 34
+Epoch 35
+Epoch 36
+Epoch 37
+Epoch 38
+Epoch 39
+Epoch 40
+Epoch 41
+Epoch 42
+Epoch 43
+Epoch 44
+Epoch 45
+Epoch 46
+Epoch 47
+Epoch 48
+Epoch 49
+Epoch 50
+Epoch 51
+Epoch 52
+Epoch 53
+Epoch 54
+Epoch 55
+Epoch 56
+Epoch 57
+Epoch 58
+Epoch 59
+Epoch 60
+Epoch 61
+Epoch 62
+Epoch 63
+Epoch 64
+Epoch 65
+Epoch 66
+Epoch 67
+Epoch 68
+Epoch 69
+Epoch 70
+Epoch 71
+Epoch 72
+Epoch 73
+Epoch 74
+Epoch 75
+Epoch 76
+Epoch 77
+Epoch 78
+Epoch 79
+Epoch 80
+Epoch 81
+Epoch 82
+Epoch 83
+Epoch 84
+Epoch 85
+Epoch 86
+Epoch 87
+Epoch 88
+Epoch 89
+Epoch 90
+Epoch 91
+Epoch 92
+Epoch 93
+Epoch 94
+Epoch 95
+Epoch 96
+Epoch 97
+Epoch 98
+Epoch 99
+Epoch 100
+
+expansion factor: 2
+Epoch 1
+Epoch 2
+Epoch 3
+Epoch 4
+Epoch 5
+Epoch 6
+Epoch 7
+Epoch 8
+Epoch 9
+Epoch 10
+Epoch 11
+Epoch 12
+Epoch 13
+Epoch 14
+Epoch 15
+Epoch 16
+Epoch 17
+Epoch 18
+Epoch 19
+Epoch 20
+Epoch 21
+Epoch 22
+Epoch 23
+Epoch 24
+Epoch 25
+Epoch 26
+Epoch 27
+Epoch 28
+Epoch 29
+Epoch 30
+Epoch 31
+Epoch 32
+Epoch 33
+Epoch 34
+Epoch 35
+Epoch 36
+Epoch 37
+Epoch 38
+Epoch 39
+Epoch 40
+Epoch 41
+Epoch 42
+Epoch 43
+Epoch 44
+Epoch 45
+Epoch 46
+Epoch 47
+Epoch 48
+Epoch 49
+Epoch 50
+Epoch 51
+Epoch 52
+Epoch 53
+Epoch 54
+Epoch 55
+Epoch 56
+Epoch 57
+Epoch 58
+Epoch 59
+Epoch 60
+Epoch 61
+Epoch 62
+Epoch 63
+Epoch 64
+Epoch 65
+Epoch 66
+Epoch 67
+Epoch 68
+Epoch 69
+Epoch 70
+Epoch 71
+Epoch 72
+Epoch 73
+Epoch 74
+Epoch 75
+Epoch 76
+Epoch 77
+Epoch 78
+Epoch 79
+Epoch 80
+Epoch 81
+Epoch 82
+Epoch 83
+Epoch 84
+Epoch 85
+Epoch 86
+Epoch 87
+Epoch 88
+Epoch 89
+Epoch 90
+Epoch 91
+Epoch 92
+Epoch 93
+Epoch 94
+Epoch 95
+Epoch 96
+Epoch 97
+Epoch 98
+Epoch 99
+Epoch 100
+
+expansion factor: 4
+Epoch 1
+Epoch 2
+Epoch 3
+Epoch 4
+Epoch 5
+Epoch 6
+Epoch 7
+Epoch 8
+Epoch 9
+Epoch 10
+Epoch 11
+Epoch 12
+Epoch 13
+Epoch 14
+Epoch 15
+Epoch 16
+Epoch 17
+Epoch 18
+Epoch 19
+Epoch 20
+Epoch 21
+Epoch 22
+Epoch 23
+Epoch 24
+Epoch 25
+Epoch 26
+Epoch 27
+Epoch 28
+Epoch 29
+Epoch 30
+Epoch 31
+Epoch 32
+Epoch 33
+Epoch 34
+Epoch 35
+Epoch 36
+Epoch 37
+Epoch 38
+Epoch 39
+Epoch 40
+Epoch 41
+Epoch 42
+Epoch 43
+Epoch 44
+Epoch 45
+Epoch 46
+Epoch 47
+Epoch 48
+Epoch 49
+Epoch 50
+Epoch 51
+Epoch 52
+Epoch 53
+Epoch 54
+Epoch 55
+Epoch 56
+Epoch 57
+Epoch 58
+Epoch 59
+Epoch 60
+Epoch 61
+Epoch 62
+Epoch 63
+Epoch 64
+Epoch 65
+Epoch 66
+Epoch 67
+Epoch 68
+Epoch 69
+Epoch 70
+Epoch 71
+Epoch 72
+Epoch 73
+Epoch 74
+Epoch 75
+Epoch 76
+Epoch 77
+Epoch 78
+Epoch 79
+Epoch 80
+Epoch 81
+Epoch 82
+Epoch 83
+Epoch 84
+Epoch 85
+Epoch 86
+Epoch 87
+Epoch 88
+Epoch 89
+Epoch 90
+Epoch 91
+Epoch 92
+Epoch 93
+Epoch 94
+Epoch 95
+Epoch 96
+Epoch 97
+Epoch 98
+Epoch 99
+Epoch 100
+
+expansion factor: 8
+Epoch 1
+Epoch 2
+Epoch 3
+Epoch 4
+Epoch 5
+Epoch 6
+Epoch 7
+Epoch 8
+Epoch 9
+Epoch 10
+Epoch 11
+Epoch 12
+Epoch 13
+Epoch 14
+Epoch 15
+Epoch 16
+Epoch 17
+Epoch 18
+Epoch 19
+Epoch 20
+Epoch 21
+Epoch 22
+Epoch 23
+Epoch 24
+Epoch 25
+Epoch 26
+Epoch 27
+Epoch 28
+Epoch 29
+Epoch 30
+Epoch 31
+Epoch 32
+Epoch 33
+Epoch 34
+Epoch 35
+Epoch 36
+Epoch 37
+Epoch 38
+Epoch 39
+Epoch 40
+Epoch 41
+Epoch 42
+Epoch 43
+Epoch 44
+Epoch 45
+Epoch 46
+Epoch 47
+Epoch 48
+Epoch 49
+Epoch 50
+Epoch 51
+Epoch 52
+Epoch 53
+Epoch 54
+Epoch 55
+Epoch 56
+Epoch 57
+Epoch 58
+Epoch 59
+Epoch 60
+Epoch 61
+Epoch 62
+Epoch 63
+Epoch 64
+Epoch 65
+Epoch 66
+Epoch 67
+Epoch 68
+Epoch 69
+Epoch 70
+Epoch 71
+Epoch 72
+Epoch 73
+Epoch 74
+Epoch 75
+Epoch 76
+Epoch 77
+Epoch 78
+Epoch 79
+Epoch 80
+Epoch 81
+Epoch 82
+Epoch 83
+Epoch 84
+Epoch 85
+Epoch 86
+Epoch 87
+Epoch 88
+Epoch 89
+Epoch 90
+Epoch 91
+Epoch 92
+Epoch 93
+Epoch 94
+Epoch 95
+Epoch 96
+Epoch 97
+Epoch 98
+Epoch 99
+Epoch 100
+
+Losses
+[[2.1173651803789846, 1.9210126521947133, 1.8469726688721602, 1.783182589141914, 1.7265764787373945, 1.6766277635493851, 1.6287726445880997, 1.5930066451697094, 1.5582136963029651, 1.5298921740268503, 1.5015102891665895, 1.4767726258091305, 1.4542937001303944, 1.4306567033843312, 1.4116634780641102, 1.393921354542608, 1.3786083944618244, 1.3563067520518437, 1.337636157908403, 1.3200366955126643, 1.3036292199131168, 1.2882624912597334, 1.2703220001267046, 1.25666754652777, 1.2407075345821088, 1.2229434730451736, 1.2126528403490706, 1.1952020049552479, 1.184969592048689, 1.1681994433750582, 1.1586663530915595, 1.1429583886090446, 1.1348218095424536, 1.1187644963679106, 1.1073459745063197, 1.098352231333018, 1.0833744302277675, 1.0770260756430419, 1.062424672457873, 1.0568625237935645, 1.037690852304249, 1.0310848808044668, 1.017345162761181, 1.0047846915167007, 0.9959131274229426, 0.9888318149787386, 0.974999416438515, 0.9668174819720675, 0.9576882311450247, 0.9438133431060235, 0.9389630949405758, 0.9245054818632658, 0.9176472922801362, 0.9061262207415403, 0.8976854412147152, 0.8901550539238069, 0.8822647707389139, 0.8721528727456432, 0.8686276218089302, 0.8566828322456316, 0.8569115010826179, 0.8430732990927099, 0.8364523888548927, 0.8307544507486436, 0.825024449840531, 0.8148221051906381, 0.8174055911543424, 0.8027008731118248, 0.8105492048403796, 0.8069455184976159, 0.7924359984257642, 0.793221713122352, 0.7922669443709162, 0.7870204848096803, 0.78610017743257, 0.776021686470722, 0.7809792890801759, 0.7767108700540669, 0.7788312620366625, 0.7702520688247803, 0.7662218719187295, 0.7673137520280335, 0.7688258524669711, 0.7673966989416601, 0.7655530006760527, 0.7622069354023775, 0.7662461886701681, 0.7538619393963948, 0.7840601346453132, 0.7532732438705766, 0.756812396942807, 0.7617999562979354, 0.7574658228841888, 0.7579174593205342, 0.769445452581891, 0.7449313380834087, 0.7563564472491174, 0.7675868300411403, 0.7432313992086884, 0.7549387270684742], [2.0736108268313393, 1.6984338604885598, 1.5694476664828523, 1.4776204014983019, 1.4032267575983501, 1.3328644947322739, 1.2649217071892964, 1.2154334730199536, 1.1643658332964952, 1.1182352046070196, 1.0762188151059553, 1.037035116987765, 1.0019076616715288, 0.9608537278059498, 0.9414159702065655, 0.906084293828291, 0.8808715873971924, 0.850012415091095, 0.8217917779065154, 0.7973268332383822, 0.777028266273801, 0.7522520148159598, 0.7220843654230732, 0.6967849042790625, 0.6826771887595696, 0.6513212717821836, 0.6318817942801034, 0.6082939824942127, 0.5856712640398909, 0.557094037094537, 0.5412548283100738, 0.5193457142318911, 0.4909270804785097, 0.47222756666829213, 0.45458664417343064, 0.43003118769896914, 0.40787111748667326, 0.39076917938640354, 0.3670208742913535, 0.3539424019263071, 0.32430570147683857, 0.3064783643216581, 0.288657113919249, 0.26963529056485963, 0.24889596631688535, 0.22830827349839766, 0.21706332298248168, 0.19849984418800878, 0.18345384647035995, 0.17323396285838635, 0.1520373359646486, 0.1469475265873401, 0.13459883757230953, 0.11875463793259067, 0.11526162181373524, 0.1086826177404436, 0.0921434524976422, 0.08186352971400541, 0.08367532923284089, 0.0827494621404287, 0.0713603724475445, 0.07281390450956762, 0.05048296209918978, 0.05856721373596479, 0.04765592213294914, 0.04866519296283374, 0.04381580901709731, 0.06513900814108703, 0.04593228119517179, 0.0488214543716901, 0.03466150570866864, 0.04152331392288498, 0.03924210296872029, 0.039921836673860886, 0.04348269878062503, 0.02934615907445818, 0.04266477527115923, 0.03053192397156168, 0.04191971894958333, 0.03135374033101001, 0.03071904017219601, 0.03146043698572258, 0.03758269115334765, 0.03514817068347341, 0.031190690917388388, 0.03358733444229004, 0.03321230258901908, 0.014833051139181253, 0.03264946863860981, 0.02365779444479885, 0.028747780165677327, 0.020405122155566727, 0.025367355040629834, 0.02861931315265046, 0.030969165213586367, 0.02796562670200752, 0.004817303694898377, 0.043107225250302694, 0.02131294644073895, 0.02244108312327014], [2.1418974596216245, 1.9671305062825724, 1.805875944054645, 1.6298157153532022, 1.5432116020366053, 1.47248236450088, 1.4162741526008567, 1.3620530055916829, 1.3040119963686179, 1.2497790221058194, 1.194129571585399, 1.1485895396346022, 1.0993910215394882, 1.0553248351644677, 1.0165435304422208, 0.9785366658969303, 0.9393727493560527, 0.9014727092155105, 0.8679020843466224, 0.8283344527797016, 0.8014159914096604, 0.7641361542903554, 0.731155182585082, 0.6995894358209942, 0.6627755819074334, 0.630066482116804, 0.5999833703650843, 0.5664240172528245, 0.5399070514361267, 0.5006061669848764, 0.4741740903776625, 0.4399674004872742, 0.4132648014542087, 0.378037597288561, 0.3437675070351042, 0.3263752643981248, 0.2941633020825398, 0.26703226913119216, 0.23962833517519258, 0.23391008772946836, 0.20203200874426175, 0.18079239516840567, 0.16758091977614042, 0.14684221796724764, 0.12997551048484146, 0.1207765575297072, 0.10984586564647725, 0.09509518543791855, 0.09619294421966462, 0.0908204441523308, 0.07531561513069322, 0.08256624952789939, 0.06725394138810284, 0.06148629367385474, 0.0672886662177451, 0.05806760504291586, 0.05213610857800769, 0.05543043070954814, 0.05320875078324786, 0.0566828323724975, 0.04441060799741498, 0.0392702596654813, 0.050254998712964495, 0.049558223742718364, 0.03830187165964683, 0.03906723219805154, 0.041679570235965815, 0.03533257670232953, 0.041727331738206946, 0.031590066243768755, 0.04306121898034666, 0.0314974687604086, 0.031814243976006525, 0.028536024875358303, 0.038653112257450585, 0.01435442193954438, 0.04046646924263275, 0.032259903793983025, 0.031928134032717645, 0.03051734849030677, 0.023283896533853633, 0.03356047678464579, 0.01810168621251504, 0.030990258414268373, 0.025813704045918023, 0.02867896955352678, 0.030552461024495766, 0.019380293746173005, 0.02478903385323679, 0.021977909371967527, 0.02732844776915335, 0.011077216974178003, 0.030715415087260414, 0.026380471105169556, 0.019616755544799892, 0.023692178731600223, 0.0230865430077705, 0.02087211784216828, 0.0154676680453438, 0.02937835755909573], [2.215264145980406, 2.0143313644182346, 1.7540960121337714, 1.6344747201865897, 1.5540727133031391, 1.4796371094101226, 1.4090238457445599, 1.3338927613652272, 1.2785274689764623, 1.2118145897412849, 1.1521951617944577, 1.094969773155344, 1.0389481370558824, 0.9829948313553315, 0.9244112838869509, 0.8733929476469678, 0.8196999668084142, 0.7623371074495413, 0.7089560707588025, 0.6553985685719859, 0.6077864954767325, 0.5587976522686536, 0.5132039963360637, 0.4712048404471344, 0.4346082646523595, 0.40824456067036485, 0.37282325752327206, 0.3479230113689552, 0.32697458425179465, 0.3059311686536235, 0.2805300743302421, 0.26103768464358873, 0.26026863542854634, 0.23598426844343504, 0.22785648326282307, 0.22082287564521175, 0.19912589965936014, 0.19972746023703414, 0.19339832740947796, 0.18597220476535734, 0.1752730797299796, 0.16350733387329236, 0.16385398184418526, 0.1663095551064176, 0.1594246352482063, 0.14895149384198897, 0.15182703624710517, 0.13772750123287253, 0.13505916912442126, 0.13505715064828278, 0.12441320779264126, 0.1271812037286132, 0.12357247132412574, 0.12232793254844482, 0.11467137414237956, 0.11037460863209136, 0.10911052876754719, 0.10965328228295497, 0.10603533787152651, 0.10202250356102348, 0.10144476864791815, 0.09241600100176119, 0.0975935245293033, 0.09429800042958783, 0.09107241791296665, 0.088781110086071, 0.08909904523907453, 0.08597697587767163, 0.08057621142665006, 0.08200692684780282, 0.0785125275964246, 0.07609414464146223, 0.07814486483123886, 0.07491265006584909, 0.0723858463418339, 0.07566048921731389, 0.06943360445371893, 0.06433433824030639, 0.07045645530596423, 0.06814475620434622, 0.06731758137945743, 0.07076557215703341, 0.06129090787004441, 0.06036701516600807, 0.0668833452667517, 0.0581651141597887, 0.06571576481475436, 0.05899834409630036, 0.05328164629765031, 0.05805230392095492, 0.05392300852549398, 0.056929423963106796, 0.05544844463371131, 0.050011497880558455, 0.052753029901044836, 0.05120615198482673, 0.048326105396995736, 0.05122565191618436, 0.04863646770964431, 0.04208881109300882]]
+Accuracies
+[[30.73, 35.13, 37.43, 40.36, 41.24, 42.65, 45.14, 45.4, 47.33, 48.8, 47.089999999999996, 49.35, 50.57000000000001, 49.65, 51.629999999999995, 50.86000000000001, 52.019999999999996, 51.580000000000005, 53.22, 52.290000000000006, 53.61, 52.93, 54.21, 54.39000000000001, 55.28999999999999, 55.43, 55.11000000000001, 54.690000000000005, 55.88999999999999, 56.15, 55.96, 56.53, 56.31, 56.47, 56.989999999999995, 57.06, 57.9, 56.220000000000006, 56.510000000000005, 56.92, 57.8, 57.089999999999996, 57.58, 56.55, 57.78, 56.989999999999995, 58.269999999999996, 57.57, 57.379999999999995, 58.14, 56.53, 57.709999999999994, 56.71000000000001, 57.95, 57.709999999999994, 58.050000000000004, 57.56, 57.379999999999995, 56.220000000000006, 57.47, 58.230000000000004, 56.00000000000001, 56.699999999999996, 56.44, 56.3, 56.53, 57.879999999999995, 58.379999999999995, 58.02, 56.699999999999996, 57.769999999999996, 56.279999999999994, 56.68, 57.66, 57.699999999999996, 57.66, 57.31, 56.220000000000006, 56.269999999999996, 56.93, 56.92, 57.699999999999996, 56.06, 56.68, 57.37, 56.68, 54.56999999999999, 55.71, 57.92, 56.38999999999999, 56.13, 57.35, 57.96, 57.269999999999996, 58.18, 57.36, 57.86, 57.410000000000004, 57.37, 57.599999999999994], [33.22, 40.08, 42.39, 46.82, 49.87, 52.459999999999994, 51.9, 55.14, 56.47, 58.64, 61.72, 63.12, 63.91, 63.870000000000005, 63.74999999999999, 62.91, 67.97, 65.89, 68.92, 68.19, 70.15, 71.17999999999999, 70.56, 71.32, 71.12, 71.8, 72.48, 73.13, 73.92, 74.7, 73.58, 75.69, 73.4, 75.88000000000001, 75.36, 74.69, 76.58, 75.59, 75.75, 75.91, 76.6, 77.33, 77.14999999999999, 75.92, 75.07000000000001, 75.81, 76.58, 74.69, 76.02, 76.22, 74.31, 76.67, 76.82, 77.06, 76.29, 77.39, 75.33999999999999, 75.91, 76.6, 77.78, 76.84, 76.6, 75.63, 76.82, 76.51, 75.39, 77.96, 77.19, 75.73, 76.99000000000001, 76.97, 76.42, 77.22, 75.64, 77.72, 77.48, 77.63, 77.07000000000001, 75.53, 77.42999999999999, 77.59, 77.46, 75.81, 74.41, 74.00999999999999, 76.75999999999999, 76.19, 77.86, 76.83, 77.03999999999999, 77.84, 77.68, 77.12, 77.23, 77.23, 77.68, 78.0, 77.98, 76.81, 77.09], [22.470000000000002, 29.38, 32.190000000000005, 39.6, 44.7, 46.660000000000004, 48.47, 50.51, 53.73, 53.47, 58.040000000000006, 59.27, 60.760000000000005, 60.47, 61.8, 64.12, 65.66, 65.53, 65.56, 67.04, 66.12, 69.46, 69.03, 70.19, 71.08, 70.58, 71.17999999999999, 71.13000000000001, 71.73, 73.45, 73.06, 72.56, 72.74000000000001, 73.97, 72.66, 73.53, 74.62, 74.79, 74.16, 73.6, 74.44, 74.06, 72.89999999999999, 73.94, 73.5, 74.57000000000001, 74.07000000000001, 73.05, 73.72, 74.51, 74.82, 74.46000000000001, 74.46000000000001, 72.61999999999999, 73.22, 73.61, 74.3, 74.57000000000001, 74.24, 70.1, 72.47, 74.76, 74.95, 74.41, 73.89, 72.5, 74.41, 74.31, 74.37, 75.16000000000001, 75.21, 74.18, 74.64, 74.53999999999999, 74.59, 75.75, 75.98, 75.19, 74.81, 75.44999999999999, 75.6, 74.14, 75.91, 73.8, 74.39, 74.63, 74.83, 75.06, 74.78, 76.17, 75.38, 75.25, 75.05, 73.67, 74.66000000000001, 75.02, 74.42, 74.52, 75.84, 75.96000000000001], [18.92, 29.909999999999997, 34.28, 38.05, 41.339999999999996, 44.16, 48.03, 49.54, 49.75, 53.49, 56.10000000000001, 53.75, 59.019999999999996, 58.9, 59.41, 61.67, 62.629999999999995, 60.84, 63.61, 62.94, 63.38, 64.2, 63.79, 64.52, 64.21, 65.78, 66.8, 66.09, 64.77000000000001, 65.53, 65.62, 65.03, 65.86999999999999, 66.47, 65.51, 65.75999999999999, 66.22, 66.08000000000001, 65.51, 67.31, 64.9, 66.63, 66.27, 66.4, 65.69, 66.33, 65.51, 66.43, 65.79, 66.43, 66.38, 66.11, 66.45, 66.34, 66.51, 65.28, 66.46, 66.11, 66.06, 66.96, 66.33, 67.12, 66.99000000000001, 67.28, 67.58, 67.15, 66.46, 67.30000000000001, 67.22, 67.14, 66.78, 67.23, 67.78, 66.42, 67.41, 67.72, 67.22, 66.88, 66.74, 67.67, 67.9, 67.49000000000001, 67.55, 67.89, 66.97999999999999, 67.78999999999999, 68.30000000000001, 67.61, 67.84, 66.92, 67.67999999999999, 67.05, 67.80000000000001, 67.36999999999999, 67.08, 68.0, 67.91, 67.88, 68.22, 67.7]]
+Effective Rank 1
+[[array(0.9846557, dtype=float32), array(0.98329294, dtype=float32), array(0.9818546, dtype=float32), array(0.98035616, dtype=float32), array(0.979054, dtype=float32), array(0.97784257, dtype=float32), array(0.9767346, dtype=float32), array(0.975682, dtype=float32), array(0.97463673, dtype=float32), array(0.97363704, dtype=float32), array(0.9725896, dtype=float32), array(0.97160023, dtype=float32), array(0.9706107, dtype=float32), array(0.9695976, dtype=float32), array(0.96862465, dtype=float32), array(0.9676473, dtype=float32), array(0.9666314, dtype=float32), array(0.9656552, dtype=float32), array(0.96463144, dtype=float32), array(0.9635988, dtype=float32), array(0.9625968, dtype=float32), array(0.96158963, dtype=float32), array(0.9606116, dtype=float32), array(0.95965487, dtype=float32), array(0.9587022, dtype=float32), array(0.95773995, dtype=float32), array(0.95682895, dtype=float32), array(0.9558632, dtype=float32), array(0.95497346, dtype=float32), array(0.9540411, dtype=float32), array(0.9531497, dtype=float32), array(0.9522343, dtype=float32), array(0.9513551, dtype=float32), array(0.9504658, dtype=float32), array(0.9495503, dtype=float32), array(0.94870293, dtype=float32), array(0.9478028, dtype=float32), array(0.9469459, dtype=float32), array(0.94603175, dtype=float32), array(0.9451827, dtype=float32), array(0.9442879, dtype=float32), array(0.9434215, dtype=float32), array(0.9425441, dtype=float32), array(0.94164634, dtype=float32), array(0.9407704, dtype=float32), array(0.93990606, dtype=float32), array(0.939031, dtype=float32), array(0.93817276, dtype=float32), array(0.93729997, dtype=float32), array(0.9364357, dtype=float32), array(0.93557703, dtype=float32), array(0.934712, dtype=float32), array(0.93388194, dtype=float32), array(0.93301666, dtype=float32), array(0.9321737, dtype=float32), array(0.9313389, dtype=float32), array(0.9305278, dtype=float32), array(0.9297156, dtype=float32), array(0.9289093, dtype=float32), array(0.92810464, dtype=float32), array(0.92737997, dtype=float32), array(0.92659605, dtype=float32), array(0.92581874, dtype=float32), array(0.92506564, dtype=float32), array(0.9243256, dtype=float32), array(0.9235732, dtype=float32), array(0.92287266, dtype=float32), array(0.9221457, dtype=float32), array(0.9214889, dtype=float32), array(0.920835, dtype=float32), array(0.92016757, dtype=float32), array(0.91955614, dtype=float32), array(0.9189358, dtype=float32), array(0.91833043, dtype=float32), array(0.9177413, dtype=float32), array(0.91716504, dtype=float32), array(0.91664565, dtype=float32), array(0.916126, dtype=float32), array(0.9156478, dtype=float32), array(0.9151336, dtype=float32), array(0.91465807, dtype=float32), array(0.91419035, dtype=float32), array(0.91371727, dtype=float32), array(0.91325665, dtype=float32), array(0.91282845, dtype=float32), array(0.9124226, dtype=float32), array(0.9120431, dtype=float32), array(0.91162515, dtype=float32), array(0.91130483, dtype=float32), array(0.9109464, dtype=float32), array(0.9105815, dtype=float32), array(0.91021967, dtype=float32), array(0.9098567, dtype=float32), array(0.9095259, dtype=float32), array(0.909189, dtype=float32), array(0.9088659, dtype=float32), array(0.90855664, dtype=float32), array(0.90822154, dtype=float32), array(0.90794367, dtype=float32), array(0.90769255, dtype=float32)], [array(0.9241097, dtype=float32), array(0.90904874, dtype=float32), array(0.895484, dtype=float32), array(0.88218987, dtype=float32), array(0.8692876, dtype=float32), array(0.856534, dtype=float32), array(0.84427905, dtype=float32), array(0.83328974, dtype=float32), array(0.8229209, dtype=float32), array(0.81349134, dtype=float32), array(0.8038966, dtype=float32), array(0.79497266, dtype=float32), array(0.7864606, dtype=float32), array(0.77787524, dtype=float32), array(0.76977134, dtype=float32), array(0.762131, dtype=float32), array(0.7542944, dtype=float32), array(0.74690145, dtype=float32), array(0.7397083, dtype=float32), array(0.7324123, dtype=float32), array(0.7256362, dtype=float32), array(0.7190756, dtype=float32), array(0.7125975, dtype=float32), array(0.7059105, dtype=float32), array(0.6995605, dtype=float32), array(0.69338727, dtype=float32), array(0.6869626, dtype=float32), array(0.68100256, dtype=float32), array(0.6753291, dtype=float32), array(0.66919446, dtype=float32), array(0.66373134, dtype=float32), array(0.6583763, dtype=float32), array(0.65272677, dtype=float32), array(0.6473253, dtype=float32), array(0.6423265, dtype=float32), array(0.63725036, dtype=float32), array(0.63243717, dtype=float32), array(0.62769204, dtype=float32), array(0.62284636, dtype=float32), array(0.6182436, dtype=float32), array(0.61371744, dtype=float32), array(0.6093035, dtype=float32), array(0.6049621, dtype=float32), array(0.6006538, dtype=float32), array(0.59656715, dtype=float32), array(0.5923058, dtype=float32), array(0.58866966, dtype=float32), array(0.5848961, dtype=float32), array(0.5812565, dtype=float32), array(0.5778979, dtype=float32), array(0.5746045, dtype=float32), array(0.5716356, dtype=float32), array(0.5686902, dtype=float32), array(0.56587434, dtype=float32), array(0.56334007, dtype=float32), array(0.56097275, dtype=float32), array(0.55867064, dtype=float32), array(0.5562434, dtype=float32), array(0.55408764, dtype=float32), array(0.5524719, dtype=float32), array(0.55054015, dtype=float32), array(0.5488191, dtype=float32), array(0.54695547, dtype=float32), array(0.54545844, dtype=float32), array(0.543826, dtype=float32), array(0.5423739, dtype=float32), array(0.54084826, dtype=float32), array(0.54047096, dtype=float32), array(0.5393963, dtype=float32), array(0.53847736, dtype=float32), array(0.5374967, dtype=float32), array(0.5363397, dtype=float32), array(0.53589165, dtype=float32), array(0.53514546, dtype=float32), array(0.5342629, dtype=float32), array(0.5336982, dtype=float32), array(0.5326754, dtype=float32), array(0.5318273, dtype=float32), array(0.5313398, dtype=float32), array(0.53063035, dtype=float32), array(0.53084695, dtype=float32), array(0.5300274, dtype=float32), array(0.5295644, dtype=float32), array(0.5291986, dtype=float32), array(0.52843255, dtype=float32), array(0.52805054, dtype=float32), array(0.5275787, dtype=float32), array(0.52683634, dtype=float32), array(0.52690697, dtype=float32), array(0.52605957, dtype=float32), array(0.525631, dtype=float32), array(0.5248101, dtype=float32), array(0.5248299, dtype=float32), array(0.52416426, dtype=float32), array(0.5242237, dtype=float32), array(0.5242041, dtype=float32), array(0.52354574, dtype=float32), array(0.5232816, dtype=float32), array(0.52267194, dtype=float32), array(0.52226424, dtype=float32)], [array(0.9275578, dtype=float32), array(0.91214347, dtype=float32), array(0.89713335, dtype=float32), array(0.8843994, dtype=float32), array(0.87236995, dtype=float32), array(0.8620372, dtype=float32), array(0.8518222, dtype=float32), array(0.84156203, dtype=float32), array(0.8304448, dtype=float32), array(0.81964034, dtype=float32), array(0.80906653, dtype=float32), array(0.79937154, dtype=float32), array(0.7903532, dtype=float32), array(0.7814169, dtype=float32), array(0.7726253, dtype=float32), array(0.7644184, dtype=float32), array(0.75685203, dtype=float32), array(0.7485029, dtype=float32), array(0.7409626, dtype=float32), array(0.7331234, dtype=float32), array(0.72623765, dtype=float32), array(0.7187127, dtype=float32), array(0.71194303, dtype=float32), array(0.7055471, dtype=float32), array(0.69816875, dtype=float32), array(0.6918854, dtype=float32), array(0.6851186, dtype=float32), array(0.6794363, dtype=float32), array(0.67314494, dtype=float32), array(0.6668974, dtype=float32), array(0.6606457, dtype=float32), array(0.6545119, dtype=float32), array(0.64870054, dtype=float32), array(0.6437726, dtype=float32), array(0.6380288, dtype=float32), array(0.633142, dtype=float32), array(0.6278037, dtype=float32), array(0.62300646, dtype=float32), array(0.61794525, dtype=float32), array(0.61424804, dtype=float32), array(0.60986936, dtype=float32), array(0.6062177, dtype=float32), array(0.602548, dtype=float32), array(0.59919816, dtype=float32), array(0.59589034, dtype=float32), array(0.59267855, dtype=float32), array(0.59024477, dtype=float32), array(0.5870819, dtype=float32), array(0.58533746, dtype=float32), array(0.58293176, dtype=float32), array(0.58072555, dtype=float32), array(0.5791132, dtype=float32), array(0.57702947, dtype=float32), array(0.57518965, dtype=float32), array(0.57423127, dtype=float32), array(0.57238024, dtype=float32), array(0.57120717, dtype=float32), array(0.5702413, dtype=float32), array(0.5690216, dtype=float32), array(0.5684234, dtype=float32), array(0.5671684, dtype=float32), array(0.5656245, dtype=float32), array(0.5657934, dtype=float32), array(0.5654395, dtype=float32), array(0.5643583, dtype=float32), array(0.5636067, dtype=float32), array(0.56252253, dtype=float32), array(0.5612356, dtype=float32), array(0.56069654, dtype=float32), array(0.5595919, dtype=float32), array(0.5597004, dtype=float32), array(0.5590367, dtype=float32), array(0.5584475, dtype=float32), array(0.55725944, dtype=float32), array(0.55739605, dtype=float32), array(0.55524623, dtype=float32), array(0.5556949, dtype=float32), array(0.5548885, dtype=float32), array(0.55486995, dtype=float32), array(0.55403125, dtype=float32), array(0.55308545, dtype=float32), array(0.5533092, dtype=float32), array(0.5517509, dtype=float32), array(0.55194485, dtype=float32), array(0.55125815, dtype=float32), array(0.5509499, dtype=float32), array(0.5513282, dtype=float32), array(0.55009395, dtype=float32), array(0.5495248, dtype=float32), array(0.549037, dtype=float32), array(0.5492556, dtype=float32), array(0.5479369, dtype=float32), array(0.54776734, dtype=float32), array(0.5476499, dtype=float32), array(0.54715174, dtype=float32), array(0.54640156, dtype=float32), array(0.54587704, dtype=float32), array(0.545568, dtype=float32), array(0.54443485, dtype=float32), array(0.54544115, dtype=float32)], [array(0.9310057, dtype=float32), array(0.8983873, dtype=float32), array(0.8786569, dtype=float32), array(0.8633613, dtype=float32), array(0.851133, dtype=float32), array(0.8381182, dtype=float32), array(0.82197934, dtype=float32), array(0.8089336, dtype=float32), array(0.79613465, dtype=float32), array(0.7839068, dtype=float32), array(0.77037984, dtype=float32), array(0.7606845, dtype=float32), array(0.7489581, dtype=float32), array(0.7373112, dtype=float32), array(0.7254136, dtype=float32), array(0.7134218, dtype=float32), array(0.7013226, dtype=float32), array(0.6897864, dtype=float32), array(0.6790124, dtype=float32), array(0.6672873, dtype=float32), array(0.6584961, dtype=float32), array(0.64867675, dtype=float32), array(0.641183, dtype=float32), array(0.63361037, dtype=float32), array(0.6278608, dtype=float32), array(0.62102914, dtype=float32), array(0.61604637, dtype=float32), array(0.6103145, dtype=float32), array(0.6064875, dtype=float32), array(0.6015593, dtype=float32), array(0.5983441, dtype=float32), array(0.59395343, dtype=float32), array(0.59354925, dtype=float32), array(0.5875203, dtype=float32), array(0.5849139, dtype=float32), array(0.5833473, dtype=float32), array(0.5800202, dtype=float32), array(0.5787655, dtype=float32), array(0.57659173, dtype=float32), array(0.5748931, dtype=float32), array(0.5736959, dtype=float32), array(0.5704863, dtype=float32), array(0.56737226, dtype=float32), array(0.56718504, dtype=float32), array(0.5663699, dtype=float32), array(0.5639247, dtype=float32), array(0.56320596, dtype=float32), array(0.56203485, dtype=float32), array(0.56029224, dtype=float32), array(0.55929464, dtype=float32), array(0.5566454, dtype=float32), array(0.5554966, dtype=float32), array(0.55381584, dtype=float32), array(0.55332816, dtype=float32), array(0.5523199, dtype=float32), array(0.5512452, dtype=float32), array(0.55034447, dtype=float32), array(0.54953426, dtype=float32), array(0.5484127, dtype=float32), array(0.54781044, dtype=float32), array(0.54697335, dtype=float32), array(0.5447163, dtype=float32), array(0.5453941, dtype=float32), array(0.54541194, dtype=float32), array(0.5438662, dtype=float32), array(0.5425583, dtype=float32), array(0.5412012, dtype=float32), array(0.54058343, dtype=float32), array(0.5392904, dtype=float32), array(0.53879845, dtype=float32), array(0.5373615, dtype=float32), array(0.53621423, dtype=float32), array(0.535163, dtype=float32), array(0.535501, dtype=float32), array(0.5356784, dtype=float32), array(0.5341097, dtype=float32), array(0.5328003, dtype=float32), array(0.532338, dtype=float32), array(0.532745, dtype=float32), array(0.5327468, dtype=float32), array(0.5314213, dtype=float32), array(0.5317337, dtype=float32), array(0.5313066, dtype=float32), array(0.529732, dtype=float32), array(0.5293568, dtype=float32), array(0.5276991, dtype=float32), array(0.5309541, dtype=float32), array(0.52822447, dtype=float32), array(0.5267827, dtype=float32), array(0.5274502, dtype=float32), array(0.52676374, dtype=float32), array(0.52673686, dtype=float32), array(0.5270245, dtype=float32), array(0.5248424, dtype=float32), array(0.52442896, dtype=float32), array(0.52484465, dtype=float32), array(0.5243875, dtype=float32), array(0.52373207, dtype=float32), array(0.5227742, dtype=float32), array(0.5221375, dtype=float32)]]
+Effective Rank 2
+[[array(0.9976605, dtype=float32), array(0.9969575, dtype=float32), array(0.9964836, dtype=float32), array(0.99575335, dtype=float32), array(0.99497116, dtype=float32), array(0.9940697, dtype=float32), array(0.9932886, dtype=float32), array(0.9924985, dtype=float32), array(0.9917026, dtype=float32), array(0.9909707, dtype=float32), array(0.9902788, dtype=float32), array(0.98958266, dtype=float32), array(0.9888636, dtype=float32), array(0.98811007, dtype=float32), array(0.98740506, dtype=float32), array(0.98667085, dtype=float32), array(0.9858785, dtype=float32), array(0.98508066, dtype=float32), array(0.9843376, dtype=float32), array(0.9835627, dtype=float32), array(0.98275656, dtype=float32), array(0.9819322, dtype=float32), array(0.98118234, dtype=float32), array(0.98041785, dtype=float32), array(0.97965795, dtype=float32), array(0.97885466, dtype=float32), array(0.97808874, dtype=float32), array(0.977251, dtype=float32), array(0.9766001, dtype=float32), array(0.9757847, dtype=float32), array(0.97508043, dtype=float32), array(0.97429526, dtype=float32), array(0.9735722, dtype=float32), array(0.97284806, dtype=float32), array(0.9720819, dtype=float32), array(0.97139364, dtype=float32), array(0.9707081, dtype=float32), array(0.96999437, dtype=float32), array(0.96926486, dtype=float32), array(0.9685833, dtype=float32), array(0.9678888, dtype=float32), array(0.96719086, dtype=float32), array(0.9664546, dtype=float32), array(0.9657455, dtype=float32), array(0.9650314, dtype=float32), array(0.96435577, dtype=float32), array(0.96370876, dtype=float32), array(0.96301, dtype=float32), array(0.96235347, dtype=float32), array(0.9617523, dtype=float32), array(0.961057, dtype=float32), array(0.9604494, dtype=float32), array(0.9598351, dtype=float32), array(0.95919055, dtype=float32), array(0.9585543, dtype=float32), array(0.95792687, dtype=float32), array(0.9573309, dtype=float32), array(0.95677346, dtype=float32), array(0.95621276, dtype=float32), array(0.95561534, dtype=float32), array(0.95511395, dtype=float32), array(0.95456886, dtype=float32), array(0.95403343, dtype=float32), array(0.9535241, dtype=float32), array(0.9530001, dtype=float32), array(0.952495, dtype=float32), array(0.95205057, dtype=float32), array(0.9515334, dtype=float32), array(0.9510586, dtype=float32), array(0.9506666, dtype=float32), array(0.9502368, dtype=float32), array(0.94981456, dtype=float32), array(0.9493994, dtype=float32), array(0.94903225, dtype=float32), array(0.94866544, dtype=float32), array(0.9483212, dtype=float32), array(0.94796467, dtype=float32), array(0.94764894, dtype=float32), array(0.94735247, dtype=float32), array(0.94704455, dtype=float32), array(0.94672257, dtype=float32), array(0.9464437, dtype=float32), array(0.946162, dtype=float32), array(0.9459021, dtype=float32), array(0.9456509, dtype=float32), array(0.9453769, dtype=float32), array(0.94515294, dtype=float32), array(0.94495535, dtype=float32), array(0.9447757, dtype=float32), array(0.94454205, dtype=float32), array(0.9443122, dtype=float32), array(0.9440851, dtype=float32), array(0.94395006, dtype=float32), array(0.9437595, dtype=float32), array(0.94353956, dtype=float32), array(0.94336414, dtype=float32), array(0.94323176, dtype=float32), array(0.9430199, dtype=float32), array(0.94288456, dtype=float32), array(0.9427151, dtype=float32)], [array(0.9265519, dtype=float32), array(0.9312503, dtype=float32), array(0.93341076, dtype=float32), array(0.9343897, dtype=float32), array(0.9354975, dtype=float32), array(0.9366066, dtype=float32), array(0.93689775, dtype=float32), array(0.93653655, dtype=float32), array(0.9359463, dtype=float32), array(0.93498325, dtype=float32), array(0.9342268, dtype=float32), array(0.9335326, dtype=float32), array(0.9329427, dtype=float32), array(0.9325626, dtype=float32), array(0.93253875, dtype=float32), array(0.9321555, dtype=float32), array(0.9323292, dtype=float32), array(0.9318348, dtype=float32), array(0.93156505, dtype=float32), array(0.9310603, dtype=float32), array(0.9307199, dtype=float32), array(0.93052924, dtype=float32), array(0.9299584, dtype=float32), array(0.9294218, dtype=float32), array(0.928911, dtype=float32), array(0.9285456, dtype=float32), array(0.9281728, dtype=float32), array(0.92766684, dtype=float32), array(0.9273122, dtype=float32), array(0.92665434, dtype=float32), array(0.9264556, dtype=float32), array(0.92594683, dtype=float32), array(0.9252812, dtype=float32), array(0.92466754, dtype=float32), array(0.9241952, dtype=float32), array(0.92377347, dtype=float32), array(0.9232851, dtype=float32), array(0.92289746, dtype=float32), array(0.92212373, dtype=float32), array(0.92169154, dtype=float32), array(0.9209872, dtype=float32), array(0.9201482, dtype=float32), array(0.9196214, dtype=float32), array(0.9187915, dtype=float32), array(0.9183084, dtype=float32), array(0.91747004, dtype=float32), array(0.91683006, dtype=float32), array(0.9160336, dtype=float32), array(0.9155331, dtype=float32), array(0.91513395, dtype=float32), array(0.91438425, dtype=float32), array(0.91400594, dtype=float32), array(0.91331714, dtype=float32), array(0.91275793, dtype=float32), array(0.9121929, dtype=float32), array(0.91235393, dtype=float32), array(0.9117564, dtype=float32), array(0.9113889, dtype=float32), array(0.91109395, dtype=float32), array(0.91086614, dtype=float32), array(0.9104993, dtype=float32), array(0.9103293, dtype=float32), array(0.9100127, dtype=float32), array(0.9100184, dtype=float32), array(0.90960443, dtype=float32), array(0.9096764, dtype=float32), array(0.90942675, dtype=float32), array(0.9097124, dtype=float32), array(0.9095651, dtype=float32), array(0.90953135, dtype=float32), array(0.9091917, dtype=float32), array(0.9089853, dtype=float32), array(0.90909797, dtype=float32), array(0.9094279, dtype=float32), array(0.9095283, dtype=float32), array(0.90970165, dtype=float32), array(0.9096645, dtype=float32), array(0.9095487, dtype=float32), array(0.90967286, dtype=float32), array(0.9098021, dtype=float32), array(0.90968007, dtype=float32), array(0.9096855, dtype=float32), array(0.9096751, dtype=float32), array(0.9098348, dtype=float32), array(0.90968955, dtype=float32), array(0.909571, dtype=float32), array(0.90956753, dtype=float32), array(0.9094662, dtype=float32), array(0.909966, dtype=float32), array(0.9093771, dtype=float32), array(0.9092964, dtype=float32), array(0.90929794, dtype=float32), array(0.9095042, dtype=float32), array(0.9095866, dtype=float32), array(0.90965915, dtype=float32), array(0.90979195, dtype=float32), array(0.90947765, dtype=float32), array(0.910015, dtype=float32), array(0.91014344, dtype=float32), array(0.9101935, dtype=float32)], [array(0.8900228, dtype=float32), array(0.88833654, dtype=float32), array(0.89654064, dtype=float32), array(0.8989559, dtype=float32), array(0.89880943, dtype=float32), array(0.8992998, dtype=float32), array(0.9000607, dtype=float32), array(0.9018187, dtype=float32), array(0.90331006, dtype=float32), array(0.90425366, dtype=float32), array(0.9054841, dtype=float32), array(0.90635026, dtype=float32), array(0.9071352, dtype=float32), array(0.90746665, dtype=float32), array(0.90814704, dtype=float32), array(0.9080704, dtype=float32), array(0.9083471, dtype=float32), array(0.9088325, dtype=float32), array(0.9086741, dtype=float32), array(0.9090199, dtype=float32), array(0.90889496, dtype=float32), array(0.9091401, dtype=float32), array(0.90951407, dtype=float32), array(0.9093108, dtype=float32), array(0.9090524, dtype=float32), array(0.9088757, dtype=float32), array(0.908493, dtype=float32), array(0.9084259, dtype=float32), array(0.9080097, dtype=float32), array(0.9074936, dtype=float32), array(0.9075272, dtype=float32), array(0.9069586, dtype=float32), array(0.9067558, dtype=float32), array(0.90648746, dtype=float32), array(0.906164, dtype=float32), array(0.9057226, dtype=float32), array(0.90577126, dtype=float32), array(0.9048427, dtype=float32), array(0.90460426, dtype=float32), array(0.90451866, dtype=float32), array(0.90425533, dtype=float32), array(0.9042062, dtype=float32), array(0.90399736, dtype=float32), array(0.903616, dtype=float32), array(0.90351975, dtype=float32), array(0.9032991, dtype=float32), array(0.9033827, dtype=float32), array(0.9032596, dtype=float32), array(0.9032973, dtype=float32), array(0.90356916, dtype=float32), array(0.9034848, dtype=float32), array(0.9037874, dtype=float32), array(0.903743, dtype=float32), array(0.90388167, dtype=float32), array(0.903709, dtype=float32), array(0.90396655, dtype=float32), array(0.90367854, dtype=float32), array(0.90374655, dtype=float32), array(0.90373063, dtype=float32), array(0.9041139, dtype=float32), array(0.904245, dtype=float32), array(0.9040513, dtype=float32), array(0.9044722, dtype=float32), array(0.9046883, dtype=float32), array(0.90474665, dtype=float32), array(0.90483636, dtype=float32), array(0.9047244, dtype=float32), array(0.90471065, dtype=float32), array(0.90433365, dtype=float32), array(0.90393245, dtype=float32), array(0.90458584, dtype=float32), array(0.90455365, dtype=float32), array(0.9045447, dtype=float32), array(0.90447366, dtype=float32), array(0.9051031, dtype=float32), array(0.9047169, dtype=float32), array(0.904794, dtype=float32), array(0.90495855, dtype=float32), array(0.9051882, dtype=float32), array(0.90519065, dtype=float32), array(0.9054141, dtype=float32), array(0.9057097, dtype=float32), array(0.90547913, dtype=float32), array(0.90545344, dtype=float32), array(0.9055385, dtype=float32), array(0.90586334, dtype=float32), array(0.90664387, dtype=float32), array(0.90619683, dtype=float32), array(0.9066203, dtype=float32), array(0.90642124, dtype=float32), array(0.9068706, dtype=float32), array(0.90657437, dtype=float32), array(0.9063397, dtype=float32), array(0.9061928, dtype=float32), array(0.90651274, dtype=float32), array(0.90635115, dtype=float32), array(0.9060735, dtype=float32), array(0.9061657, dtype=float32), array(0.90597314, dtype=float32), array(0.90643626, dtype=float32)], [array(0.87871176, dtype=float32), array(0.8723811, dtype=float32), array(0.87595636, dtype=float32), array(0.8782836, dtype=float32), array(0.8794423, dtype=float32), array(0.8803163, dtype=float32), array(0.88040876, dtype=float32), array(0.8802958, dtype=float32), array(0.88056725, dtype=float32), array(0.8804835, dtype=float32), array(0.8798816, dtype=float32), array(0.8803478, dtype=float32), array(0.8802529, dtype=float32), array(0.87987953, dtype=float32), array(0.87969506, dtype=float32), array(0.8794087, dtype=float32), array(0.87909764, dtype=float32), array(0.8788034, dtype=float32), array(0.8789216, dtype=float32), array(0.87835264, dtype=float32), array(0.8780772, dtype=float32), array(0.8776807, dtype=float32), array(0.8772148, dtype=float32), array(0.87712723, dtype=float32), array(0.87694895, dtype=float32), array(0.8768564, dtype=float32), array(0.87699085, dtype=float32), array(0.8770081, dtype=float32), array(0.87708145, dtype=float32), array(0.8772576, dtype=float32), array(0.877465, dtype=float32), array(0.877612, dtype=float32), array(0.8777551, dtype=float32), array(0.87773657, dtype=float32), array(0.87810254, dtype=float32), array(0.87793773, dtype=float32), array(0.8779615, dtype=float32), array(0.87791556, dtype=float32), array(0.8783381, dtype=float32), array(0.8781049, dtype=float32), array(0.8779186, dtype=float32), array(0.878246, dtype=float32), array(0.8780052, dtype=float32), array(0.8783274, dtype=float32), array(0.87822634, dtype=float32), array(0.8781506, dtype=float32), array(0.8779196, dtype=float32), array(0.8781267, dtype=float32), array(0.8781004, dtype=float32), array(0.8779832, dtype=float32), array(0.87787384, dtype=float32), array(0.877787, dtype=float32), array(0.8779641, dtype=float32), array(0.87813723, dtype=float32), array(0.8783504, dtype=float32), array(0.8780416, dtype=float32), array(0.87805223, dtype=float32), array(0.8781032, dtype=float32), array(0.87815106, dtype=float32), array(0.8782389, dtype=float32), array(0.87782085, dtype=float32), array(0.8780916, dtype=float32), array(0.87821126, dtype=float32), array(0.87784314, dtype=float32), array(0.87812525, dtype=float32), array(0.87781703, dtype=float32), array(0.8779447, dtype=float32), array(0.8777188, dtype=float32), array(0.8779232, dtype=float32), array(0.87790143, dtype=float32), array(0.87742525, dtype=float32), array(0.8778698, dtype=float32), array(0.8777358, dtype=float32), array(0.877656, dtype=float32), array(0.8775279, dtype=float32), array(0.8779932, dtype=float32), array(0.87807226, dtype=float32), array(0.8779457, dtype=float32), array(0.87788886, dtype=float32), array(0.8777186, dtype=float32), array(0.87766814, dtype=float32), array(0.87750894, dtype=float32), array(0.87776285, dtype=float32), array(0.8780776, dtype=float32), array(0.87780464, dtype=float32), array(0.87813264, dtype=float32), array(0.8779935, dtype=float32), array(0.877819, dtype=float32), array(0.8777537, dtype=float32), array(0.8779029, dtype=float32), array(0.8779034, dtype=float32), array(0.8780244, dtype=float32), array(0.8778335, dtype=float32), array(0.8778321, dtype=float32), array(0.8775677, dtype=float32), array(0.8780518, dtype=float32), array(0.87782717, dtype=float32), array(0.87783146, dtype=float32), array(0.8777841, dtype=float32), array(0.8779843, dtype=float32)]]
