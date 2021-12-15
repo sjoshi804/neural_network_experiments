@@ -13,7 +13,8 @@ import pandas as pd
 import tensorflow as tf
 from tensorflow.keras.datasets import mnist, cifar10, cifar100
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import InputLayer, Flatten, Dense, ReLU, Softmax, Conv2D
+from tensorflow.keras.layers import InputLayer, Flatten, Dense, ReLU, Softmax, Conv2D, MaxPool2D,\
+    AveragePooling2D
 from tensorflow.keras.optimizers import SGD, RMSprop, Adam
 from tensorflow.keras.losses import CategoricalCrossentropy
 from tensorflow.keras.metrics import CategoricalAccuracy
@@ -40,23 +41,25 @@ def main(dataset: str, run_name: str):
     y_train = tf.one_hot(y_train, depth=num_classes).numpy()
     y_test = tf.one_hot(y_test, depth=num_classes).numpy()
     training_ds = tf.data.Dataset.from_tensor_slices((x_train, y_train))
-    training_ds = training_ds.shuffle(buffer_size=1024).batch(128)
+    training_ds = training_ds.shuffle(buffer_size=1024).batch(64)
 
     model = Sequential([
         InputLayer(input_shape=x_train.shape[1:]),
-        Conv2D(8, 3, activation="relu"),  # 64
-        Conv2D(8, 3, activation="relu"),  # 64
+        Conv2D(64, 3, activation="relu", padding="same"),
+        MaxPool2D(),
+        Conv2D(128, 3, activation="relu", padding="same"),
+        MaxPool2D(),
+        Conv2D(256, 3, activation="relu", padding="same"),
+        MaxPool2D(),
+        Conv2D(512, 3, activation="relu", padding="same"),
+        AveragePooling2D(),
         Flatten(),
-        LowRankDense(256, 200),
-        ReLU(),
-        LowRankDense(256, 128),
-        ReLU(),
-        LowRankDense(256, 128),
+        LowRankDense(256, init_rank=256),  # was 170
         ReLU(),
         Dense(num_classes, activation="softmax"),
     ])
     model.compile(
-        optimizer=Adam(0.001),
+        optimizer=Adam(0.0001),
         loss=CategoricalCrossentropy(),
         metrics=[CategoricalAccuracy()]
     )
@@ -85,9 +88,9 @@ def main(dataset: str, run_name: str):
 
 
 if __name__ == "__main__":
-    runs = glob.glob("drop_train_results/*.json")
+    runs = glob.glob("drop_train_results/modelrunfull_*.json")
     runs.sort(
-        key=lambda x: int(x.split('/')[-1].split('.')[0].split('_')[1]),  # run_x -> extract x
+        key=lambda x: int(x.split('/')[-1].split('.')[0].split('_')[1]),  # "run_x" -> extract x
         reverse=True
     )
     runs = [x.split("/")[-1].split(".")[0] for x in runs]
